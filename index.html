@@ -4,35 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/eij6lkj.css">
     <title>AirDrive</title>
   </head>
   <body>
-    <nav>
-      <a href="./index.html"><img src="../archivos/logo-airdrive.png" alt="logo-airdrive" /></a>
-      <ul>
-        <li><a href="./pantallas/precios.html">Precios</a></li>
-        <li><a href="./pantallas/contacto.html">Contacto</a></li>
-        <li><a href="./pantallas/testimonios.html">Testimonios</a></li>
-        <li><a href="./pantallas/descargar.html">Descargar</a></li>
-      </ul>
+    <nav class="nav">
+      <div class="nav__cont--logopant">
+        <a href="./index.html"><img src="../archivos/logo-airdrive.png" alt="logo-airdrive" class="nav__logo"/></a>
+        <ul class="nav__pantallas">
+          <li><a href="./pantallas/precios.html">Precios</a></li>
+          <li><a href="./pantallas/contacto.html">Contacto</a></li>
+          <li><a href="./pantallas/testimonios.html">Testimonios</a></li>
+          <li><a href="./pantallas/descargar.html">Descargar</a></li>
+        </ul>
+      </div>
 
-      <ul>
-        <li>Iniciar sesión 2</li>
-        <li><button>Crea tu cuenta gratis</button></li>
+      <ul class="nav__logueo">
+        <li class="nav__iniciar">Iniciar sesión</li>
+        <li><button class="nav__button">Crea tu cuenta gratis</button></li>
       </ul>
     </nav>
-    <header>
-      <h1>
+
+    <div class="contenedor__header"></div>
+
+    <header class="header__index">
+      <h1 class="header__titulo--index">
         Colabora de forma segura en cualquier lugar con AirDrive: Tu Nube sin
         Límites.
       </h1>
-      <p>
+      <p class="header__parrafo--index">
         Experimenta la revolución en almacenamiento en la nube con AirDrive, la
         plataforma líder que eleva tus expectativas. Diseñada para ofrecer más
         que solo almacenamiento, AirDrive es tu compañero digital para
         simplificar tu vida en línea.
       </p>
-      <button>Comienza ya mismo</button>
+      <button class="header__button">Comienza ya mismo</button>
     </header>
 
     <div class="icon-wpp">
@@ -134,14 +140,18 @@
     </div>
 
     <footer>
-      <a href="./index.html"><img src="./archivos/logo-airdrive-negativo.png" alt="logo-airdrive-negativo" /></a>
+      <a href="./index.html"
+        ><img
+          src="./archivos/logo-airdrive-negativo.png"
+          alt="logo-airdrive-negativo"
+      /></a>
       <ul>
         <li><a href="./pantallas/precios.html">Precios</a></li>
         <li><a href="./pantallas/contacto.html">Contacto</a></li>
         <li><a href="./pantallas/testimonios.html">Testimonios</a></li>
         <li><a href="./pantallas/descargar.html">Descargar</a></li>
         <li>© 2024 AirDrive Company</li>
-    </ul>
+      </ul>
     </footer>
   </body>
 </html>
