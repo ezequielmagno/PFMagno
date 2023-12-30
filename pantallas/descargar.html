@@ -4,23 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/eij6lkj.css" />
     <title>Descargar</title>
   </head>
   <body>
-    <nav>
-      <a href="../index.html"><img src="../archivos/logo-airdrive.png" alt="logo-airdrive"/></a>
-      <ul>
-        <li><a href="./pantallas/precios.html">Precios</a></li>
-        <li><a href="./pantallas/contacto.html">Contacto</a></li>
-        <li><a href="./pantallas/testimonios.html">Testimonios</a></li>
-        <li><a href="./pantallas/descargar.html">Descargar</a></li>
-      </ul>
+    <nav class="nav">
+      <div class="nav__cont--logopant">
+        <a href="../index.html"
+          ><img
+            src="../archivos/logo-airdrive.png"
+            alt="logo-airdrive"
+            class="nav__logo"
+        /></a>
+        <ul class="nav__pantallas">
+          <li><a href="./precios.html">Precios</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./testimonios.html">Testimonios</a></li>
+          <li><a href="./descargar.html">Descargar</a></li>
+        </ul>
+      </div>
 
-      <ul>
-        <li>Iniciar sesión</li>
-        <li><button>Crea tu cuenta gratis</button></li>
+      <ul class="nav__logueo">
+        <li class="nav__iniciar">Iniciar sesión</li>
+        <li><button class="nav__button">Crea tu cuenta gratis</button></li>
       </ul>
     </nav>
+
+  <div class="contenedor__header"></div>
 
   <div>
     <header>
@@ -38,19 +48,25 @@
   </div>
     
 
-    <footer>
+  <footer>
+    <div class="footer__contenedor">
       <a href="../index.html"
         ><img
           src="../archivos/logo-airdrive-negativo.png"
           alt="logo-airdrive-negativo"
+          class="footer__logo"
       /></a>
-      <ul>
-        <li><a href="../pantallas/precios.html">Precios</a></li>
-        <li><a href="../pantallas/contacto.html">Contacto</a></li>
-        <li><a href="../pantallas/testimonios.html">Testimonios</a></li>
-        <li><a href="../pantallas/descargar.html">Descargar</a></li>
-        <li>© 2024 AirDrive Company</li>
+      <ul class="footer__pantallas">
+        <li><a href="./precios.html">Precios</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li><a href="./testimonios.html">Testimonios</a></li>
+        <li><a href="./descargar.html">Descargar</a></li>
       </ul>
-    </footer>
+
+      <div class="footer__derechos">
+        <li>© 2024 AirDrive Company</li>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>
