@@ -1,0 +1,27 @@
+/* Componentes */
+
+button {
+    display: flex;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.36px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    width: auto;
+    max-width: fit-content;
+  }
+
+  button:hover {
+    background-color: #0043CE;
+    cursor:pointer;
+}

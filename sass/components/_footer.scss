@@ -1,0 +1,53 @@
+/* Footer */
+
+footer {
+    display: flex;
+    width: 100%;
+    padding: 48px 24px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+    text-decoration: none;
+    bottom: 0;
+    background-color: black;
+  }
+  
+  .footer__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    margin: auto;
+    gap: 64px;
+  }
+  
+  .footer__pantallas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    list-style:none;
+  }
+  
+  .footer__pantallas li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer__pantallas li a:hover {
+    text-decoration: underline;
+    color: #0F62FE;
+  }
+  
+  .footer__logo {
+    width: 140px;
+  }
+  
+  .footer__derechos {
+    color: #8D8D8D;
+    text-align: left;
+    list-style:none;
+  }
