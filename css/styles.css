@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* _base.scss */
 /* Reset básico */
 * {
   margin: 0;
@@ -12,30 +11,36 @@
   color: #ffffff;
 }
 
-/* Variables */
-/* Tipografías */
-h1 {
+/* Header */
+.contenedor__header {
+  margin-top: 120px;
+  width: 100%;
+  background-color: white;
+}
+
+/* Colors */
+/* Tipography */
+body {
   font-family: "neue-haas-grotesk-display", sans-serif;
+}
+
+h1 {
   font-size: 60px;
   font-style: normal;
   font-weight: 600;
   line-height: 72px;
   letter-spacing: -0.6px;
-  color: black;
 }
 
 h2 {
-  font-family: "neue-haas-grotesk-display", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: 44px;
   letter-spacing: -0.36px;
-  color: black;
 }
 
 h3 {
-  font-family: "neue-haas-grotesk-display", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -44,20 +49,40 @@ h3 {
 }
 
 p {
-  font-family: "neue-haas-grotesk-display", sans-serif;
   font-size: 18px;
+  font-style: normal;
   font-weight: 450;
   line-height: 28px;
   letter-spacing: 0.36px;
 }
 
-/* Componentes */
-button {
+/* Spacing (Gap / Margin / Padding) */
+/* Effects */
+/* Buttons */
+.button-small {
+  background-color: black;
+  color: white;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-size: 16px;
+  font-weight: 450;
+  letter-spacing: 0.36px;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+.button-small:hover {
+  background-color: #0043ce;
+  cursor: pointer;
+}
+
+.button-big {
   display: flex;
   padding: 16px 28px;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -72,9 +97,8 @@ button {
   width: auto;
   max-width: fit-content;
 }
-
-button:hover {
-  background-color: #0043CE;
+.button-big:hover {
+  background-color: #0043ce;
   cursor: pointer;
 }
 
@@ -133,7 +157,7 @@ footer {
 
 /* Barra de navegación */
 .nav {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   display: flex;
   height: 64px;
   padding: 0px 24px;
@@ -189,23 +213,228 @@ footer {
   cursor: pointer;
 }
 
-.nav__button {
-  background-color: black;
-  color: white;
-  font-family: "neue-haas-grotesk-display", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: 0.36px;
-  text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 8px;
-  border: none;
-  outline: none;
+.contenedor__header {
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 120px 0px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
-.nav__button:hover {
-  background-color: #0043CE;
-  cursor: pointer;
+/* Header index */
+.header__index {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: 24px;
+}
+
+.header__titulo--index {
+  text-align: center;
+  font-style: normal;
+  box-sizing: border-box;
+  max-width: 840px;
+}
+
+.header__parrafo--index {
+  width: 100%;
+  text-align: center;
+  max-width: 840px;
+}
+
+/* Banner index */
+.banner__index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 120px 48px;
+  max-width: 1376px;
+  border-radius: 24px;
+}
+
+.banner__index img {
+  width: 100%;
+  height: 400px;
+  border-radius: 24px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* Section index 1 */
+.section__index--1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 24px;
+}
+
+.section__contenedorindex--1 {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.section__contenedorindex--1 img {
+  width: 80px;
+  height: 80px;
+}
+
+.section__div--candado {
+  display: flex;
+  width: 332px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.section__div--compartir {
+  display: flex;
+  width: 332px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.section__div--integraciones {
+  display: flex;
+  width: 332px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.section__div--colaboraciones {
+  display: flex;
+  width: 332px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+/* Section index 2 */
+.section__index--2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: auto;
+  padding: 120px 24px;
+}
+
+.section__contenedorindex--2 {
+  display: flex;
+  align-items: flex-start;
+  padding: 24px;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid #C6C6C6;
+  max-width: 840px;
+}
+
+/* Section index 3 */
+.section__index--3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+  max-width: 840px;
+  margin: auto;
+}
+
+.section__index--3 img {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+}
+
+.section__discurso {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-size: 36px;
+  font-weight: 450;
+  line-height: 44px;
+  letter-spacing: -0.36px;
+}
+
+.section__nombrebold {
+  font-weight: 600;
+}
+
+.section__nombre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Section index 4 */
+.section__contenedorindex--4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 96px;
+  margin-top: 120px;
+  padding: 32px 0px;
+  background-color: #F4F4F4;
+}
+
+.img__flecha {
+  width: 24px;
+  height: 24px;
+}
+
+/* Header descargar */
+.contenedor__descargar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 120px 48px;
+  max-width: 1376px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.header__descargar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.header__imagen--descargar {
+  display: flex;
+  max-width: 640px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+/* Section descargar */
+.contenedor__beneficios--1 {
+  display: flex;
+  padding: 48px 48px 120px 48px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 48px;
+  background-color: #F4F4F4;
+}
+
+.contenedor__beneficios--2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 800px;
 }
 
 /*# sourceMappingURL=styles.css.map */

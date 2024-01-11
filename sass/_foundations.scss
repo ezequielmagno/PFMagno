@@ -1,0 +1,80 @@
+/* Colors */
+
+$white-color: white;
+$black-color: black;
+$neutral-color-gray10: #f4f4f4;
+$neutral-color-gray30: #C6C6C6;
+$primary-color-blue60: #0f62fe;
+$primary-color-blue70: #0043ce;
+
+
+/* Tipography */
+
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-36: 36px;
+$font-size-60: 60px;
+
+$font-weight-regular: 450;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+
+$font-style-normal: normal;
+
+$line-height-28: 28px;
+$line-height-44: 44px;
+$line-height-72: 72px;
+
+
+body {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+}
+
+h1 {
+  font-size: $font-size-60;
+  font-style: $font-style-normal;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-72;
+  letter-spacing: -0.6px;
+}
+
+h2 {
+  font-size: $font-size-36;
+  font-style: $font-style-normal;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-44;
+  letter-spacing: -0.36px;
+}
+
+h3 {
+  font-size: $font-size-18;
+  font-style: $font-style-normal;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-28;
+  letter-spacing: 0.36px;
+}
+
+p {
+  font-size: $font-size-18;
+  font-style: $font-style-normal;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-28;
+  letter-spacing: 0.36px;
+}
+
+
+
+/* Spacing (Gap / Margin / Padding) */
+
+$spacing-16: 16px;
+$spacing-24: 24px;
+$spacing-32: 32px;
+$spacing-48: 48px;
+$spacing-64: 64px;
+
+
+
+/* Effects */
+
+$border-radius-8: 8px;
+$border-radius-24: 24px;

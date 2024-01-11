@@ -1,13 +1,18 @@
 // base
 @import './base';
 
+// foundations
+@import './foundations';
+
 // components
 @import './components/button';
 @import './components/footer';
 @import './components/navbar';
+@import './components/containers';
 
 // pages-sass
 @import './pages-sass/contacto';
+@import './pages-sass/index';
 @import './pages-sass/precios';
 @import './pages-sass/testimonios';
 @import './pages-sass/descargar.scss';
