@@ -17,42 +17,43 @@
     font-weight: 400;
     letter-spacing: 0.36px;
     text-decoration: none;
-}
 
-.nav__cont--logopant {
-    display: flex;
-    align-items: center;
-    gap: $spacing-64;
-}
+    &__cont {
+        display: flex;
+        align-items: center;
+        gap: $spacing-64;
+    }
 
-.nav__pantallas {
-    display: flex;
-    align-items: flex-start;
-    gap: $spacing-32;
-    list-style:none;
-}
+    &__logo {
+        width: 140px;
+    }
 
-.nav__pantallas li a {
-    text-decoration: none;
-    color: $black-color;
-}
+    &__pantallas {
+        display: flex;
+        align-items: flex-start;
+        gap: $spacing-32;
+        list-style:none;
 
-.nav__pantallas li a:hover {
-    text-decoration: underline;
-}
+        li a {
+            text-decoration: none;
+            color: $black-color;
 
-.nav__logo {
-    width: 140px;
-}
+            &:hover {
+                text-decoration: underline;
+              }
+        }
+    }
 
-.nav__logueo {
-    display: flex;
-    align-items: center;
-    gap: $spacing-32;
-    list-style:none;
-}
+    &__logueo {
+        display: flex;
+        align-items: center;
+        gap: $spacing-32;
+        list-style:none;
+    }
 
-.nav__iniciar:hover {
-    text-decoration: underline;
-    cursor:pointer;
+    &__iniciar:hover {
+        text-decoration: underline;
+        cursor:pointer;
+    }
+    
 }

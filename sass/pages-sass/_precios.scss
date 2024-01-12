@@ -1,0 +1,87 @@
+/* Header precios */
+
+.header__precios {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: $spacing-24;
+  }
+
+  .header__titulo--precios {
+    text-align: center;
+    font-style: normal;
+    box-sizing: border-box;
+    max-width: 840px;
+  }
+
+.header__parrafo--precios {
+    width: 100%;
+    text-align: center;
+    max-width: 840px;
+}
+
+
+/* Cards precios */
+
+.cardprecios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 120px 24px;
+    gap: $spacing-16;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    & h3 {
+        color: $primary-color-blue70;
+    }
+}
+
+@mixin cards__estructura {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid $neutral-color-gray30;
+    padding: $spacing-24;
+    gap: $spacing-16;
+    width: 400px;
+    background-color: $neutral-color-gray10;
+    border-radius: $border-radius-24;
+  }
+
+
+.cardprecios__personal {
+    @include cards__estructura;
+}
+
+.cardprecios__profesional {
+    @include cards__estructura;
+}
+
+.cardprecios__equipos {
+    @include cards__estructura;
+}
+
+.cardprecios__list {
+    color: $neutral-color-gray50;
+}
+
+
+.section__planes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+    padding: 32px 0px;
+    background-color: $neutral-color-gray10;
+
+    & a {
+        color: $primary-color-blue70;
+        text-decoration: underline;
+    }
+}

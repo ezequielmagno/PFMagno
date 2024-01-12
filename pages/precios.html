@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,15 +8,11 @@
   <link rel="stylesheet" href="https://use.typekit.net/eij6lkj.css" />
   <title>Precios</title>
 </head>
+
 <body>
   <nav class="nav">
-    <div class="nav__cont--logopant">
-      <a href="../index.html"
-        ><img
-          src="../archivos/logo-airdrive.png"
-          alt="logo-airdrive"
-          class="nav__logo"
-      /></a>
+    <div class="nav__cont">
+      <a href="../index.html"><img src="../archivos/logo-airdrive.png" alt="logo-airdrive" class="nav__logo" /></a>
       <ul class="nav__pantallas">
         <li><a href="./precios.html">Precios</a></li>
         <li><a href="./contacto.html">Contacto</a></li>
@@ -29,23 +26,26 @@
       <li><button class="button-small">Crea tu cuenta gratis</button></li>
     </ul>
   </nav>
-  
-  <header>
-    <h1>Traslada tus ideas a la acción con AirDrive.</h1>
-    <p>
+
+  <div class="contenedor__header"></div>
+
+  <header class="header__precios">
+    <h1 class="header__titulo--precios">Traslada tus ideas a la acción con AirDrive.</h1>
+    <p class="header__parrafo--precios">
       Almacena y comparte archivos de manera segura. Firma y envía documentos
       con facilidad. Captura pantallas y añade comentarios detallados.
       Organiza tu trabajo eficientemente con AirDrive, tu plataforma todo en
       uno para gestionar, colaborar y potenciar tu productividad.
     </p>
-    <button>¿Solo necesitas almacenamiento? Consultar los planes</button>
+    <button class="button-big">¿Solo necesitas almacenamiento? Consultar los planes<img src="../archivos/fluent_arrow-left-24-filled.png" alt="Flecha"
+      class="img__flecha" /></button>
   </header>
 
-  <section class="cards-precios">
-    <div class="card-personal">
+  <section class="cardprecios">
+    <div class="cardprecios__personal">
       <h2>Plan Personal</h2>
       <h3>$4.99/mes</h3>
-      <ul>
+      <ul class="cardprecios__list">
         <li>Almacenamiento: 100 GB</li>
         <li>Características Destacadas:</li>
         <li>Seguridad de Cifrado de Extremo a Extremo</li>
@@ -54,26 +54,28 @@
         <li>Historial de Archivos y Restauración</li>
         <li>Soporte al Cliente Prioritario</li>
       </ul>
-      <button>Comprar Plan Personal</button>
+      <button class="button-big">Comprar Plan Personal<img src="../archivos/fluent_arrow-left-24-filled.png" alt="Flecha"
+        class="img__flecha" /></button>
     </div>
 
-    <div class="card-profesional">
+    <div class="cardprecios__profesional">
       <h2>Plan Profesional</h2>
       <h3>$9.99/mes por usuario</h3>
-      <ul>
+      <ul class="cardprecios__list">
         <li>Todas las características del Plan Personal</li>
         <li>Colaboración Avanzada en Proyectos</li>
         <li>Integración con Aplicaciones Profesionales</li>
         <li>Herramientas de Edición y Comentario Avanzadas</li>
         <li>Informes de Actividad y Seguimiento</li>
       </ul>
-      <button>Comprar Plan Profesional</button>
+      <button class="button-big">Comprar Plan Profesional<img src="../archivos/fluent_arrow-left-24-filled.png" alt="Flecha"
+        class="img__flecha" /></button>
     </div>
 
-    <div class="card-equipos">
+    <div class="cardprecios__equipos">
       <h2>Plan para Equipos</h2>
       <h3>$19.99/mes por usuario</h3>
-      <ul>
+      <ul class="cardprecios__list">
         <li>Almacenamiento: 1 TB por usuario</li>
         <li>Todas las características del Plan Profesional</li>
         <li>Administración Centralizada de Usuarios y Permisos</li>
@@ -81,12 +83,13 @@
         <li>Asistencia Técnica Prioritaria 24/7</li>
         <li>Herramientas de Análisis de Datos y Estadísticas</li>
       </ul>
-      <button>Comprar Plan para Equipos</button>
+      <button class="button-big">Comprar Plan para Equipos<img src="../archivos/fluent_arrow-left-24-filled.png" alt="Flecha"
+        class="img__flecha" /></button>
     </div>
   </section>
 
-  <div>
-    <a href="http://example.com">Compara planes para más información</a>
+  <div class="section__planes">
+    <a href="http://example.com"><h2>Compara planes para más información</h2></a>
   </div>
 
   <footer>
@@ -100,4 +103,5 @@
     </ul>
   </footer>
 </body>
+
 </html>

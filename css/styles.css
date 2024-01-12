@@ -174,40 +174,33 @@ footer {
   letter-spacing: 0.36px;
   text-decoration: none;
 }
-
-.nav__cont--logopant {
+.nav__cont {
   display: flex;
   align-items: center;
   gap: 64px;
 }
-
+.nav__logo {
+  width: 140px;
+}
 .nav__pantallas {
   display: flex;
   align-items: flex-start;
   gap: 32px;
   list-style: none;
 }
-
 .nav__pantallas li a {
   text-decoration: none;
   color: black;
 }
-
 .nav__pantallas li a:hover {
   text-decoration: underline;
 }
-
-.nav__logo {
-  width: 140px;
-}
-
 .nav__logueo {
   display: flex;
   align-items: center;
   gap: 32px;
   list-style: none;
 }
-
 .nav__iniciar:hover {
   text-decoration: underline;
   cursor: pointer;
@@ -235,13 +228,13 @@ footer {
   text-align: center;
   font-style: normal;
   box-sizing: border-box;
-  max-width: 840px;
+  max-width: 760px;
 }
 
 .header__parrafo--index {
   width: 100%;
   text-align: center;
-  max-width: 840px;
+  max-width: 760px;
 }
 
 /* Banner index */
@@ -381,12 +374,104 @@ footer {
   gap: 96px;
   margin-top: 120px;
   padding: 32px 0px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 
 .img__flecha {
   width: 24px;
   height: 24px;
+}
+
+/* Header precios */
+.header__precios {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  gap: 24px;
+}
+
+.header__titulo--precios {
+  text-align: center;
+  font-style: normal;
+  box-sizing: border-box;
+  max-width: 840px;
+}
+
+.header__parrafo--precios {
+  width: 100%;
+  text-align: center;
+  max-width: 840px;
+}
+
+/* Cards precios */
+.cardprecios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 120px 24px;
+  gap: 16px;
+}
+.cardprecios:hover {
+  cursor: pointer;
+}
+.cardprecios h3 {
+  color: #0043ce;
+}
+
+.cardprecios__personal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #C6C6C6;
+  padding: 24px;
+  gap: 16px;
+  width: 400px;
+  background-color: #f4f4f4;
+  border-radius: 24px;
+}
+
+.cardprecios__profesional {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #C6C6C6;
+  padding: 24px;
+  gap: 16px;
+  width: 400px;
+  background-color: #f4f4f4;
+  border-radius: 24px;
+}
+
+.cardprecios__equipos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #C6C6C6;
+  padding: 24px;
+  gap: 16px;
+  width: 400px;
+  background-color: #f4f4f4;
+  border-radius: 24px;
+}
+
+.cardprecios__list {
+  color: #8D8D8D;
+}
+
+.section__planes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 96px;
+  padding: 32px 0px;
+  background-color: #f4f4f4;
+}
+.section__planes a {
+  color: #0043ce;
+  text-decoration: underline;
 }
 
 /* Header descargar */

@@ -13,13 +13,13 @@
     text-align: center;
     font-style: normal;
     box-sizing: border-box;
-    max-width: 840px;
+    max-width: 760px;
   }
 
 .header__parrafo--index {
     width: 100%;
     text-align: center;
-    max-width: 840px;
+    max-width: 760px;
 }
 
 
@@ -115,8 +115,8 @@
   align-items: flex-start;
   padding: $spacing-24;
   flex-direction: column;
-  gap: 16px;
-  border: 1px solid #C6C6C6;
+  gap: $spacing-16;
+  border: 1px solid $neutral-color-gray30;
   max-width: 840px;
 }
 
@@ -166,7 +166,7 @@
   gap: 96px;
   margin-top: 120px;
   padding: 32px 0px;
-  background-color: #F4F4F4;
+  background-color: $neutral-color-gray10;
 }
 
 .img__flecha {
