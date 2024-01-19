@@ -30,7 +30,9 @@
       </ul>
     </nav>
 
-    <header>
+    <div class="contenedor__header"></div>
+
+    <header class="header__contacto">
       <h2>Comunícate con el equipo de ventas de AirDrive</h2>
       <p>
         ¿Tienes preguntas o necesitas asistencia personalizada? Estamos aquí
@@ -40,45 +42,37 @@
       </p>
     </header>
 
-    <div>
-      <div>
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" placeholder="Ej: Julián" />
+    <form class="form__contacto">
+      <div class="form__group">
+        <label for="nombre" class="form__label">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Julián" class="form__input"/>
       </div>
-
-      <div>
+    
+      <div class="form__group">
         <label for="apellido">Apellido</label>
-        <input type="text" id="apellido" placeholder="Ej: Montenegro" />
+        <input type="text" id="apellido" name="apellido" placeholder="Ej: Montenegro" class="form__input"/>
+      </div>
+    
+      <div class="form__group">
+        <label for="email" class="form__label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Ej: you@company.com" class="form__input"/>
+      </div>
+    
+      <div class="form__group">
+        <label for="mensaje" class="form__label">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje" class="form__input"></textarea>
+      </div>
+    
+      <div class="form__group">
+        <label for="condiciones" class="form__label">Aceptas nuestra política de privacidad?</label>
+        <input type="checkbox" id="condiciones" name="condiciones" required  class="form__input"/>
       </div>
 
-      <div>
-        <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Ej: you@company.com"
-        />
-      </div>
-
-      <div>
-        <label for="mensaje">Mensaje</label>
-        <input
-          type="textarea"
-          id="mensaje"
-          placeholder="Escribe aquí tu mensaje"
-        />
-      </div>
-
-      <div>
-        <label for="condiciones"
-          >Aceptas nuestra amigable política de privacidad?</label
-        >
-        <input type="checkbox" id="condiciones" required />
-      </div>
-
-      <input type="submit" value="Enviar tu consulta" />
-    </div>
+      <a href="https://es.wikipedia.org/wiki/Pol%C3%ADtica_de_privacidad" class="form__politicas">Nuestras políticas de privacidad</a>
+    
+      <input type="submit" value="Enviar tu consulta" class="button-small"/>
+    </form>
+    
 
     <footer>
       <div class="footer__contenedor">

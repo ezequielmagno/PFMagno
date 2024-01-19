@@ -5,12 +5,17 @@ $black-color: black;
 $neutral-color-gray10: #f4f4f4;
 $neutral-color-gray30: #C6C6C6;
 $neutral-color-gray50: #8D8D8D;
-$primary-color-blue60: #0f62fe;
-$primary-color-blue70: #0043ce;
+$primary-color-blue10: #E5F6FF;
+$primary-color-blue50: #1192E8;
+$primary-color-blue60: #0072C3;
+$primary-color-blue70: #00539A;
+$primary-color-blue90: #012749;
+$primary-color-blue100: #061727;
 
 
 /* Tipography */
 
+$font-size-12: 12px;
 $font-size-16: 16px;
 $font-size-18: 18px;
 $font-size-36: 36px;
@@ -67,11 +72,13 @@ p {
 
 /* Spacing (Gap / Margin / Padding) */
 
+$spacing-8: 8px;
 $spacing-16: 16px;
 $spacing-24: 24px;
 $spacing-32: 32px;
 $spacing-48: 48px;
 $spacing-64: 64px;
+$spacing-120: 120px;
 
 
 

@@ -1,0 +1,54 @@
+/* Header testimonios */
+
+.header__testimonios {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    gap: $spacing-24;
+    width: 760px;
+    padding-bottom: $spacing-64;
+
+    &__titulo--testimonios {
+        max-width: 760px;
+        text-align: center;
+    }
+
+    &__parrafo--testimonios {
+        max-width: 760px;
+        text-align: center;
+    }
+}
+
+/* Section testimonios */
+
+.section__testimonios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    margin: auto;
+    background-color: $neutral-color-gray10;
+
+    &--cont {
+        max-width: 760px;
+        padding-top: $spacing-48;
+        padding-bottom: $spacing-64;
+    }
+
+    &--cont2 {
+        padding: $spacing-24;
+    }
+
+    &--logo {
+        height: $spacing-48;
+    }
+}
+
+.nombres__testimonios {
+    color: $neutral-color-gray30;
+}

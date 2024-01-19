@@ -7,7 +7,7 @@
 }
 
 ::selection {
-  background-color: #0043CE;
+  background-color: #1192E8;
   color: #ffffff;
 }
 
@@ -73,7 +73,7 @@ p {
   outline: none;
 }
 .button-small:hover {
-  background-color: #0043ce;
+  background-color: #1192E8;
   cursor: pointer;
 }
 
@@ -98,7 +98,7 @@ p {
   max-width: fit-content;
 }
 .button-big:hover {
-  background-color: #0043ce;
+  background-color: #1192E8;
   cursor: pointer;
 }
 
@@ -115,7 +115,7 @@ footer {
   letter-spacing: 0.36px;
   text-decoration: none;
   bottom: 0;
-  background-color: black;
+  background-color: #061727;
 }
 
 .footer__contenedor {
@@ -142,7 +142,7 @@ footer {
 
 .footer__pantallas li a:hover {
   text-decoration: underline;
-  color: #0F62FE;
+  color: #1192E8;
 }
 
 .footer__logo {
@@ -212,6 +212,52 @@ footer {
   padding: 0px 0px 120px 0px;
   box-sizing: border-box;
   margin: 0 auto;
+}
+
+/* Header contacto */
+.header__contacto {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  gap: 24px;
+  width: 760px;
+  padding-bottom: 64px;
+}
+
+/* Formulario contacto */
+.form__contacto {
+  display: flex;
+  padding: 48px 24px;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 24px;
+  border: 1px solid #f4f4f4;
+  border-radius: 24px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
+  max-width: 400px;
+  margin-bottom: 64px;
+}
+.form__contacto__group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+}
+.form__contacto__label {
+  padding: 16px;
+}
+.form__contacto__input {
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form__contacto__politicas {
+  font-size: 12px;
 }
 
 /* Header index */
@@ -418,7 +464,7 @@ footer {
   cursor: pointer;
 }
 .cardprecios h3 {
-  color: #0043ce;
+  color: #00539A;
 }
 
 .cardprecios__personal {
@@ -470,8 +516,56 @@ footer {
   background-color: #f4f4f4;
 }
 .section__planes a {
-  color: #0043ce;
+  color: #00539A;
   text-decoration: underline;
+}
+
+/* Header testimonios */
+.header__testimonios {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  margin: auto;
+  gap: 24px;
+  width: 760px;
+  padding-bottom: 64px;
+}
+.header__testimonios__titulo--testimonios {
+  max-width: 760px;
+  text-align: center;
+}
+.header__testimonios__parrafo--testimonios {
+  max-width: 760px;
+  text-align: center;
+}
+
+/* Section testimonios */
+.section__testimonios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  margin: auto;
+  background-color: #f4f4f4;
+}
+.section__testimonios--cont {
+  max-width: 760px;
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+.section__testimonios--cont2 {
+  padding: 24px;
+}
+.section__testimonios--logo {
+  height: 48px;
+}
+
+.nombres__testimonios {
+  color: #C6C6C6;
 }
 
 /* Header descargar */

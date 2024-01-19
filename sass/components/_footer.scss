@@ -12,7 +12,7 @@ footer {
     letter-spacing: 0.36px;
     text-decoration: none;
     bottom: 0;
-    background-color: black;
+    background-color: $primary-color-blue100;
   }
   
   .footer__contenedor {
@@ -39,7 +39,7 @@ footer {
   
   .footer__pantallas li a:hover {
     text-decoration: underline;
-    color: #0F62FE;
+    color: $primary-color-blue50;
   }
   
   .footer__logo {
