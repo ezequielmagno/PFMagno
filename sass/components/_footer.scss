@@ -22,6 +22,11 @@ footer {
     align-self: stretch;
     margin: auto;
     gap: 64px;
+
+    @include media-breakpoint-md {
+      flex-direction: column;
+      gap: $spacing-32;
+    }
   }
   
   .footer__pantallas {
@@ -30,6 +35,11 @@ footer {
     align-items: center;
     gap: 32px;
     list-style:none;
+
+    @include media-breakpoint-sm {
+      flex-direction: column;
+      gap: $spacing-16;
+    }
   }
   
   .footer__pantallas li a {

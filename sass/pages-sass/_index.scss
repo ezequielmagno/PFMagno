@@ -14,12 +14,23 @@
     font-style: normal;
     box-sizing: border-box;
     max-width: 760px;
+
+    @include media-breakpoint-md {
+      font-size: 48px;
+      padding: 0 24px;
+      line-height: 56px;
+    }
   }
 
 .header__parrafo--index {
     width: 100%;
     text-align: center;
     max-width: 760px;
+
+    @include media-breakpoint-md {
+      padding: 0 $spacing-16;
+      font-size: $font-size-16;
+    }
 }
 
 
@@ -33,6 +44,10 @@
   padding: 120px 48px;
   max-width: 1376px;
   border-radius: 24px;
+
+  @include media-breakpoint-md {
+    padding: 48px 24px;
+  }
 }
 
 .banner__index img {
@@ -67,36 +82,32 @@
   height: 80px;
 }
 
-.section__div--candado {
+@mixin integraciones {
   display: flex;
-  width: 332px;
+  max-width: 332px;
   flex-direction: column;
   align-items: flex-start;
   gap: $spacing-24;
+
+  @include media-breakpoint-sm {
+    padding: 0 $spacing-8;
+  }
+}
+
+.section__div--candado {
+  @include integraciones;
 }
 
 .section__div--compartir {
-  display: flex;
-  width: 332px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: $spacing-24;
+  @include integraciones;
 }
 
 .section__div--integraciones {
-  display: flex;
-  width: 332px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: $spacing-24;
+  @include integraciones;
 }
 
 .section__div--colaboraciones {
-  display: flex;
-  width: 332px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: $spacing-24;
+  @include integraciones;
 }
 
 /* Section index 2 */
@@ -145,6 +156,11 @@
   font-weight: 450;
   line-height: 44px;
   letter-spacing: -0.36px;
+
+  @include media-breakpoint-md {
+    padding: 0 24px;
+    font-size: 32px;
+  }
 }
 
 .section__nombrebold {
@@ -167,6 +183,22 @@
   margin-top: 120px;
   padding: 32px 0px;
   background-color: $neutral-color-gray10;
+
+  @include media-breakpoint-lg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    padding: 24px 24px;
+    gap: $spacing-24;
+  }
+
+  & h2 {
+    @include media-breakpoint-sm {
+      font-size: 24px;
+    }
+  }
 }
 
 .img__flecha {
