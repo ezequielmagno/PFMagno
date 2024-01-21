@@ -14,12 +14,23 @@
     font-style: normal;
     box-sizing: border-box;
     max-width: 840px;
+
+    @include media-breakpoint-md {
+        font-size: 48px;
+        padding: 0 24px;
+        line-height: 56px;
+      }
   }
 
 .header__parrafo--precios {
     width: 100%;
     text-align: center;
     max-width: 840px;
+
+    @include media-breakpoint-md {
+        padding: 0 $spacing-16;
+        font-size: $font-size-16;
+      }
 }
 
 
@@ -31,7 +42,7 @@
     align-items: center;
     margin: 0 auto;
     padding: 120px 24px;
-    gap: $spacing-16;
+    gap: $spacing-48;
 
     &:hover {
         cursor: pointer;
@@ -46,25 +57,54 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: 1px solid $neutral-color-gray30;
-    padding: $spacing-24;
-    gap: $spacing-16;
+    text-align: center;
+    border: 1px solid $neutral-color-gray10;
+    padding: $spacing-32 $spacing-24 $spacing-32 $spacing-24;
+    gap: $spacing-24;
     width: 400px;
-    background-color: $neutral-color-gray10;
+    background-color: $white-color;
     border-radius: $border-radius-24;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
+
+    @include media-breakpoint-sm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin-left: $spacing-16;
+        margin-right: $spacing-16;
+      }
   }
 
+@mixin card__li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .cardprecios__personal {
     @include cards__estructura;
+
+    & li{
+        @include card__li;
+    }
 }
 
 .cardprecios__profesional {
     @include cards__estructura;
+
+    & li{
+        @include card__li;
+    }
 }
 
 .cardprecios__equipos {
     @include cards__estructura;
+
+    & li{
+        @include card__li;
+    }
 }
 
 .cardprecios__list {
@@ -76,12 +116,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 96px;
     padding: 32px 0px;
     background-color: $neutral-color-gray10;
+
+    & h2 {
+        @include media-breakpoint-md {
+            font-size: 24px;
+            margin-left: $spacing-16;
+            margin-right: $spacing-16;
+          }
+    }
 
     & a {
         color: $primary-color-blue70;
         text-decoration: underline;
     }
+
+    @include media-breakpoint-md {
+        padding-left: $spacing-16;
+        padding-right: $spacing-16;
+        padding: 24px 0px;
+      }
 }

@@ -102,6 +102,13 @@ p {
   background-color: #1192E8;
   cursor: pointer;
 }
+@media (max-width: 576px) {
+  .button-big {
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 16px;
+  }
+}
 
 /* Footer */
 footer {
@@ -237,14 +244,21 @@ footer {
   text-align: center;
   margin: auto;
   gap: 24px;
-  width: 760px;
+  max-width: 760px;
   padding-bottom: 64px;
+}
+@media (max-width: 768px) {
+  .header__contacto {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 64px;
+  }
 }
 
 /* Formulario contacto */
 .form__contacto {
   display: flex;
-  padding: 48px 24px;
+  padding: 24px 24px;
   flex-direction: column;
   align-items: center;
   margin: auto;
@@ -256,9 +270,6 @@ footer {
   margin-bottom: 64px;
 }
 .form__contacto__group {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
   gap: 8px;
 }
 .form__contacto__label {
@@ -267,10 +278,19 @@ footer {
 .form__contacto__input {
   padding: 16px;
   width: 100%;
-  box-sizing: border-box;
 }
 .form__contacto__politicas {
   font-size: 12px;
+}
+@media (max-width: 576px) {
+  .form__contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 }
 
 /* Header index */
@@ -321,16 +341,31 @@ footer {
 }
 @media (max-width: 768px) {
   .banner__index {
-    padding: 48px 24px;
+    padding: 48px 24px 24px 24px;
   }
 }
 
 .banner__index img {
   width: 100%;
-  height: 400px;
+  height: 600px;
   border-radius: 24px;
   object-fit: cover;
   object-position: top center;
+}
+@media (max-width: 992px) {
+  .banner__index img {
+    height: 480px;
+  }
+}
+@media (max-width: 768px) {
+  .banner__index img {
+    height: 400px;
+  }
+}
+@media (max-width: 576px) {
+  .banner__index img {
+    height: 240px;
+  }
 }
 
 /* Section index 1 */
@@ -339,7 +374,10 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 48px;
-  padding: 24px;
+  padding: 16px;
+}
+.section__index--1 h2 {
+  text-align: center;
 }
 
 .section__contenedorindex--1 {
@@ -347,13 +385,19 @@ footer {
   align-items: flex-start;
   box-sizing: border-box;
   justify-content: center;
-  gap: 16px;
+  gap: 24px;
   flex-wrap: wrap;
 }
 
 .section__contenedorindex--1 img {
   width: 80px;
   height: 80px;
+}
+@media (max-width: 576px) {
+  .section__contenedorindex--1 img {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .section__div--candado {
@@ -363,11 +407,6 @@ footer {
   align-items: flex-start;
   gap: 24px;
 }
-@media (max-width: 576px) {
-  .section__div--candado {
-    padding: 0 8px;
-  }
-}
 
 .section__div--compartir {
   display: flex;
@@ -375,11 +414,6 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-}
-@media (max-width: 576px) {
-  .section__div--compartir {
-    padding: 0 8px;
-  }
 }
 
 .section__div--integraciones {
@@ -389,11 +423,6 @@ footer {
   align-items: flex-start;
   gap: 24px;
 }
-@media (max-width: 576px) {
-  .section__div--integraciones {
-    padding: 0 8px;
-  }
-}
 
 .section__div--colaboraciones {
   display: flex;
@@ -401,11 +430,6 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-}
-@media (max-width: 576px) {
-  .section__div--colaboraciones {
-    padding: 0 8px;
-  }
 }
 
 /* Section index 2 */
@@ -425,6 +449,7 @@ footer {
   flex-direction: column;
   gap: 16px;
   border: 1px solid #C6C6C6;
+  border-radius: 24px;
   max-width: 840px;
 }
 
@@ -517,11 +542,24 @@ footer {
   box-sizing: border-box;
   max-width: 840px;
 }
+@media (max-width: 768px) {
+  .header__titulo--precios {
+    font-size: 48px;
+    padding: 0 24px;
+    line-height: 56px;
+  }
+}
 
 .header__parrafo--precios {
   width: 100%;
   text-align: center;
   max-width: 840px;
+}
+@media (max-width: 768px) {
+  .header__parrafo--precios {
+    padding: 0 16px;
+    font-size: 16px;
+  }
 }
 
 /* Cards precios */
@@ -531,7 +569,7 @@ footer {
   align-items: center;
   margin: 0 auto;
   padding: 120px 24px;
-  gap: 16px;
+  gap: 48px;
 }
 .cardprecios:hover {
   cursor: pointer;
@@ -544,36 +582,90 @@ footer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #C6C6C6;
-  padding: 24px;
-  gap: 16px;
+  text-align: center;
+  border: 1px solid #f4f4f4;
+  padding: 32px 24px 32px 24px;
+  gap: 24px;
   width: 400px;
-  background-color: #f4f4f4;
+  background-color: white;
   border-radius: 24px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
+}
+@media (max-width: 576px) {
+  .cardprecios__personal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+.cardprecios__personal li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cardprecios__profesional {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #C6C6C6;
-  padding: 24px;
-  gap: 16px;
+  text-align: center;
+  border: 1px solid #f4f4f4;
+  padding: 32px 24px 32px 24px;
+  gap: 24px;
   width: 400px;
-  background-color: #f4f4f4;
+  background-color: white;
   border-radius: 24px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
+}
+@media (max-width: 576px) {
+  .cardprecios__profesional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+.cardprecios__profesional li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cardprecios__equipos {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #C6C6C6;
-  padding: 24px;
-  gap: 16px;
+  text-align: center;
+  border: 1px solid #f4f4f4;
+  padding: 32px 24px 32px 24px;
+  gap: 24px;
   width: 400px;
-  background-color: #f4f4f4;
+  background-color: white;
   border-radius: 24px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
+}
+@media (max-width: 576px) {
+  .cardprecios__equipos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+.cardprecios__equipos li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cardprecios__list {
@@ -584,13 +676,28 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 96px;
   padding: 32px 0px;
   background-color: #f4f4f4;
 }
+@media (max-width: 768px) {
+  .section__planes h2 {
+    font-size: 24px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
 .section__planes a {
   color: #00539A;
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .section__planes {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding: 24px 0px;
+  }
 }
 
 /* Header testimonios */
@@ -646,11 +753,23 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-  padding: 120px 48px;
+  gap: 32px;
+  padding: 120px 64px;
   max-width: 1376px;
   box-sizing: border-box;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .contenedor__descargar {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+@media (max-width: 992px) {
+  .contenedor__descargar {
+    flex-wrap: wrap;
+    padding: 64px 24px;
+  }
 }
 
 .header__descargar {
@@ -669,11 +788,17 @@ footer {
   border-radius: 24px;
   object-fit: cover;
 }
+@media (max-width: 1200px) {
+  .header__imagen--descargar {
+    max-width: 100%;
+    margin: 0 24px;
+  }
+}
 
 /* Section descargar */
 .contenedor__beneficios--1 {
   display: flex;
-  padding: 48px 48px 120px 48px;
+  padding: 64px 48px;
   align-items: center;
   flex-direction: column;
   justify-content: center;

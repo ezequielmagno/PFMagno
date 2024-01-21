@@ -44,4 +44,9 @@
       cursor:pointer;
   }
 
+  @include media-breakpoint-sm {
+    margin-left: $spacing-16;
+    margin-right: $spacing-16;
+    font-size: $font-size-16;
+  }
   }

@@ -4,11 +4,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-    padding: 120px 48px;
+    gap: $spacing-32;
+    padding: $spacing-120 $spacing-64;
     max-width: 1376px;
     box-sizing: border-box;
     margin: 0 auto;
+
+    @include media-breakpoint-xl {
+      flex-wrap: wrap;
+      gap: $spacing-32;
+    }
+
+    @include media-breakpoint-lg {
+      flex-wrap: wrap;
+      padding: $spacing-64 $spacing-24;
+    }
   }
   
   .header__descargar {
@@ -26,18 +36,24 @@
     flex-shrink: 0;
     border-radius: 24px;
     object-fit: cover;
+
+    @include media-breakpoint-xl {
+      max-width: 100%;
+      margin: 0 $spacing-24;
+    }
+
   }
 
   /* Section descargar */
 
 .contenedor__beneficios--1 {
   display: flex;
-  padding: 48px 48px 120px 48px;
+  padding: $spacing-64 $spacing-48;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  gap: 48px;
+  gap: $spacing-48;
   background-color: #F4F4F4;
 }
 
