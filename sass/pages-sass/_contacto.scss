@@ -12,6 +12,12 @@
     max-width: 760px;
     padding-bottom: $spacing-64;
 
+    & p {
+        @include media-breakpoint-md {
+            font-size: $font-size-16;
+          }
+    }
+
     @include media-breakpoint-md {
         padding-left: $spacing-16;
         padding-right: $spacing-16;
@@ -33,7 +39,8 @@
     border-radius: $border-radius-24;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
     max-width: 400px;
-    margin-bottom: 64px;
+    margin-bottom: $spacing-64;
+    text-align: center;
 
     &__group {
         gap: $spacing-8;

@@ -17,7 +17,7 @@
 
     @include media-breakpoint-lg {
       flex-wrap: wrap;
-      padding: $spacing-64 $spacing-24;
+      padding: $spacing-120 $spacing-24 $spacing-64 $spacing-24;
     }
   }
   
