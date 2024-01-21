@@ -1,7 +1,7 @@
 /* Buttons */
 
 .button-small {
-  background-color: $black-color;
+  background-color: $primary-color-blue90;
   color: $white-color;
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-size: $font-size-16;
@@ -14,7 +14,7 @@
   outline: none;
 
   &:hover {
-      background-color: $primary-color-blue50;
+      background-color: $primary-color-blue70;
       cursor:pointer;
   }
 }

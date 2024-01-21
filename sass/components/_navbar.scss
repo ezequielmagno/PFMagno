@@ -1,7 +1,7 @@
   /* Barra de navegación */
 
   .nav {
-    background-color: $neutral-color-gray10;
+    background-color: $primary-color-blue100;
     display: flex;
     height: $spacing-64;
     padding: 0px 24px;
@@ -36,7 +36,7 @@
 
         li a {
             text-decoration: none;
-            color: $black-color;
+            color: $white-color;
 
             &:hover {
                 text-decoration: underline;
@@ -49,6 +49,7 @@
         align-items: center;
         gap: $spacing-32;
         list-style:none;
+        color: $white-color;
     }
 
     &__iniciar:hover {
