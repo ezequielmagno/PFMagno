@@ -36,6 +36,7 @@
     flex-shrink: 0;
     border-radius: 24px;
     object-fit: cover;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
 
     @include media-breakpoint-xl {
       max-width: 100%;

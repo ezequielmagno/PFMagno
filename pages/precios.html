@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="https://use.typekit.net/eij6lkj.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Precios</title>
 </head>
 
@@ -34,7 +35,7 @@
 
   <div class="contenedor__header"></div>
 
-  <header class="header__precios">
+  <header class="header__precios" data-aos="fade-down">
     <h1 class="header__titulo--precios">Traslada tus ideas a la acción con AirDrive.</h1>
     <p class="header__parrafo--precios">
       Almacena y comparte archivos de manera segura. Firma y envía documentos
@@ -113,6 +114,12 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>

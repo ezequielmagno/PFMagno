@@ -382,6 +382,7 @@ label {
   border-radius: 24px;
   object-fit: cover;
   object-position: top center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
 }
 @media (max-width: 992px) {
   .banner__index img {
@@ -841,6 +842,7 @@ label {
   flex-shrink: 0;
   border-radius: 24px;
   object-fit: cover;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.14);
 }
 @media (max-width: 1200px) {
   .header__imagen--descargar {

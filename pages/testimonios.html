@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/eij6lkj.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Testimonios</title>
   </head>
   <body>
@@ -32,7 +33,7 @@
 
     <div class="contenedor__header"></div>
 
-    <header class="header__testimonios">
+    <header class="header__testimonios" data-aos="fade-left">
       <h2 class="header__titulo--testimonios">
         Descubre lo que dicen nuestros usuarios:
       </h2>
@@ -121,5 +122,11 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>

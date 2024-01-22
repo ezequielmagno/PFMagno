@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="https://use.typekit.net/eij6lkj.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Descargar</title>
   </head>
   <body>
@@ -31,7 +32,7 @@
     </nav>
 
   <div class="contenedor__descargar">
-    <header class="header__descargar">
+    <header class="header__descargar" data-aos="fade-right">
       <h2>
         Descarga la app de escritorio de AirDrive para disfrutar de una
         experiencia más rápida
@@ -42,7 +43,7 @@
       <button class="button-big">Descargar para IOS y Android</button>
     </header>
 
-    <img src="../archivos/imagen-descargar.jpg" alt="Muchacha descargando un archivo" class="header__imagen--descargar">
+    <img src="../archivos/imagen-descargar.jpg" alt="Muchacha descargando un archivo" class="header__imagen--descargar" data-aos="fade-left">
   </div>
 
   <div class="contenedor__beneficios--1">
@@ -83,5 +84,11 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
   </body>
 </html>

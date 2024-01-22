@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="https://use.typekit.net/eij6lkj.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>AirDrive</title>
 </head>
 
@@ -29,7 +30,9 @@
 
   <div class="contenedor__header"></div>
 
-  <header class="header__index">
+  <header class="header__index" data-aos="fade-down"
+  data-aos-easing="linear"
+  data-aos-duration="1500">
     <h1 class="header__titulo--index">
       Colabora de forma segura en cualquier lugar con AirDrive: Tu Nube sin
       Límites.
@@ -100,7 +103,7 @@
   <section class="section__index--2">
     <h2>¿Cómo usarás AirDrive?</h2>
 
-    <div class="section__contenedorindex--2">
+    <div class="section__contenedorindex--2" data-aos="fade-up-right">
       <h3>Para trabajar</h3>
       <p>
         Trabaja con eficiencia con tus compañeros de equipo y clientes,
@@ -113,7 +116,7 @@
       </button>
     </div>
 
-    <div class="section__contenedorindex--2">
+    <div class="section__contenedorindex--2" data-aos="fade-up-left">
       <h3>Para uso personal</h3>
       <p>
         Mantén todo lo importante para ti y tu familia a salvo en un solo
@@ -165,6 +168,12 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
